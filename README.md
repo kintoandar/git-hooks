@@ -4,7 +4,7 @@
 
 ### github_email_verify.sh
 Assumes you are using your private email as the global git configuration.  
-Denies commits to a github repo if you do not configure a local public email address first.
+Allows changing the local user email or proceeding with the private one, before the commit.
 
 #### Install
 ```
