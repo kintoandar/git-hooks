@@ -3,7 +3,8 @@
 ## pre-commit hooks
 
 ### github_email_verify.sh
-Assumes you are using your private email as the global git configuration and denies commits to a github repo, if you do not configure a local public email address first.
+Assumes you are using your private email as the global git configuration.  
+Denies commits to a github repo if you do not configure a local public email address first.
 
 #### Install
 ```
