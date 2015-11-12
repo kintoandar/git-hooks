@@ -3,7 +3,7 @@
 ## pre-commit hooks
 
 ### github_email_verify.sh
-Allows changing the user email or proceed with the global configured one before committing to github.  
+Allows changing the user email or proceeding with the global configured one before committing to a github repo.  
 > Assumes you are using your private email as the global git configuration.
 
 #### Install
