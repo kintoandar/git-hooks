@@ -20,7 +20,7 @@ if [ $GITHUB -eq 1 ] && [[ $LOCAL_EMAIL == $GLOBAL_EMAIL ]]; then
   echo -e "user.name:\t $GLOBAL_NAME"
   echo -e "user.email:\t $GLOBAL_EMAIL\n"
 
-  echo -n "[WARN] Proceed with private email (y/n): "
+  echo -n "[WARN] Proceed with private email [$LOCAL_NAME] (y/n): "
   read OPTION
 
   if [[ $OPTION == [yY] ]]; then
