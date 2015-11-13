@@ -22,17 +22,14 @@ Global git config
 \tuser.email:\t%s\n\n" \
 "$LOCAL_NAME" "$LOCAL_EMAIL" "$GLOBAL_NAME" "$GLOBAL_EMAIL"
 
-  echo -n "[WARN] Proceed with private email [$LOCAL_EMAIL] (y/n): "
-  read -r OPTION
+  read -p "[WARN] Proceed with private email [$LOCAL_EMAIL] (y/n): " -r OPTION
 
   if [[ $OPTION == [yY] ]]; then
     exit 0
   else
-    echo -ne "\nEnter new local user.email: "
-    read -r NEW_EMAIL
+    read -p "Enter new local user.email: " -r NEW_EMAIL
 
-    echo -n "Proceed with new local user.email [$NEW_EMAIL] (y/n): "
-    read -r OPTION
+    read -p "Proceed with new local user.email [$NEW_EMAIL] (y/n): " -r OPTION
 
     case $OPTION in
       [yY]* ) git config user.email "$NEW_EMAIL" && \
