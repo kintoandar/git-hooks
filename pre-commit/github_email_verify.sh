@@ -8,7 +8,7 @@ GLOBAL_EMAIL=$(git config --global user.email)
 
 GITHUB=$(git config --get remote.origin.url | grep -c github.com)
 
-if [ $GITHUB -eq 1 ] && [[ $LOCAL_EMAIL == $GLOBAL_EMAIL ]]; then
+if [ $GITHUB -eq 1 ] && [[ "$LOCAL_EMAIL" == "$GLOBAL_EMAIL" ]]; then
   # assigns stdin
   exec < /dev/tty
 
