@@ -21,16 +21,16 @@ if [ $GITHUB -eq 1 ] && [[ $LOCAL_EMAIL == $GLOBAL_EMAIL ]]; then
   echo -e "user.email:\t $GLOBAL_EMAIL\n"
 
   echo -n "[WARN] Proceed with private email [$LOCAL_EMAIL] (y/n): "
-  read OPTION
+  read -r OPTION
 
   if [[ $OPTION == [yY] ]]; then
     exit 0
   else
     echo -ne "\nEnter new local user.email: "
-    read NEW_EMAIL
+    read -r NEW_EMAIL
 
     echo -n "Proceed with new local user.email [$NEW_EMAIL] (y/n): "
-    read OPTION
+    read -r OPTION
 
     case $OPTION in
       [yY]* ) git config user.email "$NEW_EMAIL" && \
