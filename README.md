@@ -16,5 +16,5 @@ ln -s $(pwd)/pre-commit/github_email_verify.sh ~/.git/hooks/pre-commit
 ```
 
 ## Contributors
-[kintoandar](https://github.com/kintoandar)
+[kintoandar](https://github.com/kintoandar)  
 [ruizink](https://github.com/ruizink)
