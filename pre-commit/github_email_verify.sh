@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 LOCAL_NAME=$(git config --get user.name)
 LOCAL_EMAIL=$(git config --get user.email)
