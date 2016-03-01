@@ -10,9 +10,9 @@ Allows changing the user email or proceeding with the global configured one befo
 ```
 git clone https://github.com/kintoandar/git-hooks.git
 cd git-hooks
-git config --global init.templatedir '~/.git'
-mkdir -p ~/.git/hooks
-ln -s $(pwd)/pre-commit/github_email_verify.sh ~/.git/hooks/pre-commit
+mkdir -p ~/.git-templates/hooks
+git config --global init.templatedir '~/.git-templates'
+ln -s $(pwd)/pre-commit/github_email_verify.sh ~/.git-templates/hooks/pre-commit
 ```
 
 ## Contributors
