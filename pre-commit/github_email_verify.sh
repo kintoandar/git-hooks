@@ -28,7 +28,7 @@ Global git config
   else
     
     if [[ ! -z "$PRE_COMMIT_GITHUB_EMAIL" ]]; then
-      read -p "Enter new local user.email (leave empty to use '$PRE_COMMIT_GITHUB_EMAIL'): " -r NEW_EMAIL
+      read -p "Enter new local user.email or leave blank to proceed with [$PRE_COMMIT_GITHUB_EMAIL]: " -r NEW_EMAIL
       if [[ -z "$NEW_EMAIL" ]]; then
         NEW_EMAIL="$PRE_COMMIT_GITHUB_EMAIL"
       fi
