@@ -6,6 +6,7 @@ Table of Contents
       * [github\_email\_verify](#github_email_verify)
         * [Motivation](#motivation)
         * [Install](#install)
+        * [Optional](#optional)
         * [Demo](#demo)
     * [Contributors](#contributors)
 
@@ -27,6 +28,13 @@ mkdir -p ~/.git-templates/hooks
 git config --global init.templatedir '~/.git-templates'
 ln -s $(pwd)/pre-commit/github_email_verify.sh ~/.git-templates/hooks/pre-commit
 ```
+
+#### Optional
+In order to have your github's email account as the default email to be used, add the following line to your shell startup file (~/.bashrc, ~/.zshrc, etc).
+```
+export PRE_COMMIT_GITHUB_EMAIL='user@email.domain'
+```
+
 #### Demo
 It can save your bacon!
 
@@ -36,3 +44,4 @@ It can save your bacon!
 Made with ♥️ by:
    * [kintoandar](https://github.com/kintoandar)
    * [ruizink](https://github.com/ruizink)
+   * [andreferreirav2](https://github.com/andreferreirav2)
