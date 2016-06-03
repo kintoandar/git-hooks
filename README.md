@@ -30,7 +30,7 @@ ln -s $(pwd)/pre-commit/github_email_verify.sh ~/.git-templates/hooks/pre-commit
 ```
 
 #### Optional
-In order to have your github's email account as the default email to be used, add the following line to your shell startup file (~/.bashrc, ~/.zshrc, etc).
+In order to have your github's email account as the default email to be used, add the following line to your shell startup file (`~/.bashrc`, `~/.zshrc`, etc).
 ```
 export PRE_COMMIT_GITHUB_EMAIL='user@email.domain'
 ```
@@ -38,7 +38,7 @@ export PRE_COMMIT_GITHUB_EMAIL='user@email.domain'
 #### Demo
 It can save your bacon!
 
-![Image of Yaktocat](https://lh3.googleusercontent.com/-dTC_5x1zPLw/V1A69dVxy3I/AAAAAAAAPys/VhyXmGjqdoAY-T8Z4rKsI7sMrwHzOjGrgCCo/s2048/github_email_verify.gif)
+![demo](https://lh3.googleusercontent.com/-KEncpkxUNIA/V1HEak0l6kI/AAAAAAAAPzw/aE1bbrdeSDcYJOLhDq90PZUYBSuouExdgCCo/s2048/github_email_verify.gif)
 
 ## Contributors
 Made with ♥️ by:
