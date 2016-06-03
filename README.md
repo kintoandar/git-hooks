@@ -27,6 +27,13 @@ mkdir -p ~/.git-templates/hooks
 git config --global init.templatedir '~/.git-templates'
 ln -s $(pwd)/pre-commit/github_email_verify.sh ~/.git-templates/hooks/pre-commit
 ```
+
+#### Optional
+To add your github's account email as the default email to use, add the following line to your \*rc file (~/.bashrc, ~/.zshrc, etc)
+```
+export PRE_COMMIT_GITHUB_EMAIL=<name@email.domain>
+```
+
 #### Demo
 It can save your bacon!
 
@@ -36,3 +43,4 @@ It can save your bacon!
 Made with ♥️ by:
    * [kintoandar](https://github.com/kintoandar)
    * [ruizink](https://github.com/ruizink)
+   * [andreferreirav2](https://github.com/andreferreirav2)
